@@ -16,22 +16,22 @@ uspe <- data.frame(USPersonalExpenditure)
 X1940  X1945 X1950 X1955 X1960
 
 # Why are they so strange?
-
+Must have letter in front of number or they wont be recognized
 
 # What are the row names of your dataframe?
-
+Food and Tobacco, Household Operation, Medical and Health, Personal Care, Private Education
 
 # Create a column `category` that is equal to your rownames
-
+uspe$category <- c("1", "2", "3", "4", "5") 
 
 # How much money was spent on personal care in 1940?
-
+1.040
 
 # How much money was spent on Food and Tobacco in 1960
-
+86.80
 
 # What was the highest expenditure category in 1960?
-
+Household Operation
 
 ### Bonus ###
 
