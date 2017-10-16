@@ -22,16 +22,16 @@ Must have letter in front of number or they wont be recognized
 Food and Tobacco, Household Operation, Medical and Health, Personal Care, Private Education
 
 # Create a column `category` that is equal to your rownames
-uspe$category <- c("1", "2", "3", "4", "5") 
+uspe$category <- rownames(uspe)
 
 # How much money was spent on personal care in 1940?
-1.040
+personalcare.1940 <- uspe["Personal Care", "X1940"]
 
 # How much money was spent on Food and Tobacco in 1960
-86.80
+food.1960 <- uspe["Food and Tobacco", X1960]
 
 # What was the highest expenditure category in 1960?
-Household Operation
+highest.1960 <- uspe$category[es.exp$X1960 == max(uspe$X1960)]
 
 ### Bonus ###
 
