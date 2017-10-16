@@ -31,7 +31,7 @@ personalcare.1940 <- uspe["Personal Care", "X1940"]
 food.1960 <- uspe["Food and Tobacco", X1960]
 
 # What was the highest expenditure category in 1960?
-highest.1960 <- uspe$category[es.exp$X1960 == max(uspe$X1960)]
+highest.1960 <- uspe$category[uspe$X1960 == max(uspe$X1960)]
 
 ### Bonus ###
 
